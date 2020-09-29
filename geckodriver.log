@@ -773,3 +773,129 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
 1601412212099	Marionette	INFO	Listening on port 36421
 1601412212171	Marionette	WARN	TLS certificate errors will be ignored for this session
+1601412992232	Marionette	INFO	Stopped listening on port 36421
+1601413030849	geckodriver	INFO	Listening on 127.0.0.1:51367
+1601413030856	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZiCKNF"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601413034269	Marionette	INFO	Listening on port 42795
+1601413034370	Marionette	WARN	TLS certificate errors will be ignored for this session
+1601413119690	Marionette	INFO	Stopped listening on port 42795
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:405:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:989:5\nhandler@resource://devtools/shared/protocol/Actor.js:166:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child2/pagestyle26 (resource://devtools/server/actors/styles.js:989:5)", "resource://devtools/shared/protocol/Front.js", 327))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:405:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:02:54.447: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:02:54.447: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:02:54.448: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:02:54.448: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:02:54.449: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-WARNING **: 18:02:54.452: ../../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fd38b7f3600' of type 'MaiAtkType139'
+
+(firefox:28812): GLib-GObject-WARNING **: 18:02:54.524: ../../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fd3972cf790' of type 'MaiAtkType139'
+
+(firefox:28812): GLib-GObject-WARNING **: 18:02:54.524: ../../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fd3972cf8d0' of type 'MaiAtkType139'
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:02:54.565: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:02:54.566: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:02:54.651: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-WARNING **: 18:03:33.487: ../../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fd3a1a45290' of type 'MaiAtkType21'
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:04:01.489: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:405:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+
+(firefox:28812): GLib-GObject-CRITICAL **: 18:04:07.787: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:28812): GLib-GObject-WARNING **: 18:04:10.836: ../../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fd37897cc40' of type 'MaiAtkType139'
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:405:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2274))
+1601413504285	geckodriver	INFO	Listening on 127.0.0.1:58983
+1601413504294	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePFqpL8"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601413507226	Marionette	INFO	Listening on port 34207
+1601413507311	Marionette	WARN	TLS certificate errors will be ignored for this session
+1601413794353	geckodriver	INFO	Listening on 127.0.0.1:54083
+1601413794361	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepln9Y1"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601413797478	Marionette	INFO	Listening on port 33327
+1601413797576	Marionette	WARN	TLS certificate errors will be ignored for this session
+1601413816400	Marionette	INFO	Stopped listening on port 34207
+1601413818805	Marionette	INFO	Stopped listening on port 33327
+1601413820308	Marionette	INFO	Stopped listening on port 35615
+1601413832334	geckodriver	INFO	Listening on 127.0.0.1:41829
+1601413832342	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXmTL0P"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+console.error: services.settings: 
+  main/messaging-experiments Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
+1601413835484	Marionette	INFO	Listening on port 39741
+1601413835554	Marionette	WARN	TLS certificate errors will be ignored for this session
+1601413903398	geckodriver	INFO	Listening on 127.0.0.1:35711
+1601413903405	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehD94BY"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601413906404	Marionette	INFO	Listening on port 44473
+1601413906419	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 697))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 351))
+1601413922841	Marionette	INFO	Stopped listening on port 44473
+1601413929945	Marionette	INFO	Stopped listening on port 39741
+1601413930736	geckodriver	INFO	Listening on 127.0.0.1:59987
+1601413930744	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewnokFi"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601413934011	Marionette	INFO	Listening on port 40699
+1601413934054	Marionette	WARN	TLS certificate errors will be ignored for this session
+1601413958012	Marionette	INFO	Stopped listening on port 40699

@@ -7,7 +7,7 @@ class Instabot:
         self.driver = webdriver.Firefox()
         self.username = username
         self.driver.get("https://instagram.com")
-        time.sleep(2)
+        time.sleep(5)
         self.driver.find_element_by_xpath("//input[@name=\"username\"]")\
             .send_keys(username)
         self.driver.find_element_by_xpath("//input[@name=\"password\"]")\
@@ -28,6 +28,15 @@ class Instabot:
         self.driver.find_element_by_xpath("//a[contains(@href,'/following')]")\
             .click()
         time.sleep(2)
+        #sugs = self.driver.find_element_by_xpath("//h4[contains(text(), sugestões)]")
+        #self.driver.execute_script("arguments[0].scrollIntoView")
+        #time.sleep(2)
+        scroll_box =  self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div[2]")
+        last_ht, ht = 0,1
+        time.sleep(1)
+        ht = self.driver.execute_script("""arguments[0].scrollTo(0, arguments[0].scrollHeight);
+        return arguments[0].scrollHeight;
+        """, scroll_box)
 
 
 my_bot = Instabot('johnyanastacio','johny@257310')
