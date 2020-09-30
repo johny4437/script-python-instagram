@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import random
 
 class Instabot:
     def __init__(self, username, password):
@@ -21,26 +22,46 @@ class Instabot:
         self.driver.find_element_by_xpath("//button[contains(text(), 'Agora não')]")\
             .click()
     
-    def search_hastags(self, hastag):
-        self.driver.find_element_by_xpath("//input[@type=\"text\"]")\
-            .send_keys(hastag)
-   # def get_unfollowers(self):
-       # self.driver.find_element_by_xpath("//a[contains(@href,'/{}')]".format(self.username))\
-        #    .click()
-        #time.sleep(2)
-        #self.driver.find_element_by_xpath("//a[contains(@href,'/following')]")\
-         #   .click()
-        #time.sleep(2)
-        #sugs = self.driver.find_element_by_xpath("//h4[contains(text(), sugestões)]")
-        #self.driver.execute_script("arguments[0].scrollIntoView")
-        #time.sleep(2)
-        #scroll_box =  self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div[2]")
-        #last_ht, ht = 0,1
-        #time.sleep(1)
-        #ht = self.driver.execute_script("""arguments[0].scrollTo(0, arguments[0].scrollHeight);
-        #return arguments[0].scrollHeight;
-        #""", scroll_box)
+    def like_photos(self, hastag):
+        driver = self.driver
+        driver.get("https://www.instagram.com/explore/tags/"+hastag+"/?hl=en")
+        time.sleep(2)
+        
+        
+        for i in range(1,3):
+            
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(2)
+        
+        hrefs= driver.find_elements_by_tag_name("a")
+        pic_hrefs = [];
+        for element in hrefs:
+            tags = element.get_attribute('href')
+            if  '.com/p/' in tags:
+                pic_hrefs.append(tags) 
+        for pic in pic_hrefs:
+            driver.get(pic)
+            time.sleep(3)
+            like_button = lambda: driver.find_element_by_xpath('//svg[@arial-label="Curtir"]').click()
+            like_button().click()
+            sleep(3)
+            
 
 
-my_bot = Instabot('johnyanastacio','johny@257310')
-my_bot.search_hastags("#python")
+        #pic_hrefs = [elem.get_attribute('href') for elem in hrefs]
+        #pic_hrefs = [href for href in pic_hrefs if hastag in href]
+        #print(pic_hrefs)
+
+        #for pic_href in pic_hrefs:
+           # driver.get(pic_href)
+           # driver.execute_script("window.scroll(0, document.body.scrollHeight);")
+            #try:
+                #driver.find_elements_by_link_text('Curtir').click()
+                #time.sleep(2)
+           # except Exception as e:
+               # time.sleep(2)
+
+        
+
+my_bot = Instabot('great_setups','johny@257310')
+my_bot.like_photos("newyork")
