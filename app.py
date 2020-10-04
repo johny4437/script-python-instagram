@@ -3,6 +3,9 @@ from selenium.webdriver.common.keys import Keys
 import time
 import random
 
+
+print("INSTAGRAM BOT PARA CURTIR FOTOS")
+
 class Instabot:
     def __init__(self, username, password):
         self.driver = webdriver.Firefox()
@@ -42,7 +45,7 @@ class Instabot:
         for pic in pic_hrefs:
             driver.get(pic)
             time.sleep(3)
-            like_button = lambda: driver.find_element_by_xpath('//svg[@arial-label="Curtir"]').click()
+            like_button = lambda: driver.find_element_by_xpath('//span[@aria-label="Curtir"]').click()
             like_button().click()
             sleep(3)
             
@@ -63,5 +66,5 @@ class Instabot:
 
         
 
-my_bot = Instabot('great_setups','johny@257310')
+my_bot = Instabot('userame','password')
 my_bot.like_photos("newyork")
