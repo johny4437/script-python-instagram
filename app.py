@@ -45,26 +45,10 @@ class Instabot:
         for pic in pic_hrefs:
             driver.get(pic)
             time.sleep(3)
-            like_button = lambda: driver.find_element_by_xpath('//span[@aria-label="Curtir"]').click()
-            like_button().click()
-            sleep(3)
+            like_button = driver.find_element_by_css_selector('.fr66n > button:nth-child(1) > div:nth-child(1) > span:nth-child(1) > svg:nth-child(1)').click()
+            time.sleep(3)
             
-
-
-        #pic_hrefs = [elem.get_attribute('href') for elem in hrefs]
-        #pic_hrefs = [href for href in pic_hrefs if hastag in href]
-        #print(pic_hrefs)
-
-        #for pic_href in pic_hrefs:
-           # driver.get(pic_href)
-           # driver.execute_script("window.scroll(0, document.body.scrollHeight);")
-            #try:
-                #driver.find_elements_by_link_text('Curtir').click()
-                #time.sleep(2)
-           # except Exception as e:
-               # time.sleep(2)
-
         
 
-my_bot = Instabot('userame','password')
-my_bot.like_photos("newyork")
+my_bot = Instabot('username','password')
+my_bot.like_photos("here goes the hastag without #")
